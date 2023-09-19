@@ -67,6 +67,14 @@ fs.mkdir("frontend-scaffold",function(err){
                 console.log(err);
             }
 
+            fs.open("./frontend-scaffold/images/.gitkeep","w",function(err){
+                if(err){
+                    console.log(err);
+                }
+            
+                console.log("empty images file created successfully")
+            })
+
             console.log("images folder created successfully");
         })
     
